@@ -1,0 +1,118 @@
+*{ 
+  margin: 0; 
+  padding: 0 ;
+  box-sizing: border-box;
+}
+.welcome-admin{
+    height: 30em;
+    width: 100%;
+    background-image: url(../../images/backgound-page-admin.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .welcome-admin h1 {
+     font-size: 300%;
+     margin-left: 20px;
+     color: #fff; 
+  }
+  .welcome-admin h4 {
+    font-size: 150%;
+    margin-left: 20px;
+    color: #fff; 
+ }
+ #btn-head {
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: 'Roboto Slab', serif;
+  transition: all .5s ease;
+  margin-left: 15%;
+  margin-top:2% ;
+ }
+ 
+ #btn-head:hover {
+  letter-spacing: 3px;
+  background-color: hsl(197, 100%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(60, 24, 220) 0px 7px 29px 0px;
+ }
+ 
+ #btn-head:active {
+  letter-spacing: 3px;
+  background-color: hsl(197, 100%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(60, 24, 220) 0px 7px 29px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+ }
+ .sec-page{
+   text-align: center;
+ }
+ .card {
+  margin-top: 30%;
+  text-align: center;
+  display: inline-block;
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  background: #ffffff;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  margin: 20px;
+ }
+ 
+ .card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+ }
+ 
+ .card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left:50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+ }
+ 
+ .text-body {
+  color: rgb(134, 134, 134);
+ }
+ 
+
+ .text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #000000;
+ }
+
+ .card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+ }
+ 
+ .card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+ }
+
+
+ 

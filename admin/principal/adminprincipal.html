@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="adminprincipal.css">
+   <link rel="stylesheet" href="admin-nav-footer-form.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <title>Welcome</title>
+</head>
+<body>
+  <div class="head-page">
+    <a href="adminprincipal.html"><img src="../../images/LEDSI.png" alt="" id="logo"></a>
+  <div class="right-panel">
+      <a href="../profil/profil.php"><button class="profil-btn">Profil</button></a>
+      <form action="../logout/logout.php" method="post" >
+        <button  type="submit" name="logout" value="deconnexion" class="deconnexion-btn">deconnexion</button>
+        </form>
+      </div>
+      </div>
+      <nav class="navbar" id="navbar">
+        <ul class="nav-menu">
+          <li class="home" id="hm"><a href="../principal/adminprincipal.html"><img src="../../images/icons8-home-32.png" alt=""></a></li>
+          <li class="nav-item" id="pr"><a href="../gestionmembres/gestionmembre.php">Gestion des membres</a></li>
+          <li class="nav-item" id="er"><a href="../gestionequipes/gestionequipe.php">Gestion des Equipes</a></li>
+          <li class="nav-item" id="pe"><a href="../gestionpublications/gestionenv.php">Gestion des Publications et Evenements Scientifiques</a>
+          <ul  class="Publication-et-Evenements">
+            <li class="Subnav-item" id="pc"><a href="../gestionpublications/gestionenv.php">Gestion de Publication et communication</a></li>
+            <li class="Subnav-item" id="tm"><a href="../gestionpublications/gestionenv.php">Gestion Theses et Memoires</a></li>
+            <li class="Subnav-item" id="es"><a href="../gestionpublications/gestionenv.php">Gestions Evenements Scientifiques</a></li>
+          </ul>
+          </li>
+          <li class="nav-item" id="pj"><a href="../gestionprojets/gestionprojet.php">Gestion des Projets</a>
+          <ul class="Projets">
+            <li class="Subnav-item" id="na"><a href="../gestionprojets/gestionprojet.php">Gestion des Projets Nationaux</a></li>
+            <li class="Subnav-item" id="in"><a href="../gestionprojets/gestionprojet.php">Gestion des Projets Internationaux</a></li>
+          </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="welcome-admin">
+        <br>
+        <h1>Bienvenue A vous cher <br> Administrateur</h1>
+        <h4>dans cette partie <br> vous pouvez tout les changements<br> concernant le site officiel du laboratoire</h4>
+        <a href="#second-page"><button id="btn-head"> faire des changements </button></a>
+      </div>
+      <div id="second-page" class="sec-page">
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Membres</p>
+            <p class="text-body">gerer les membres des equipes</p>
+          </div>
+         <a href="../gestionmembres/gestmembre.php"><button class="card-button">Gestion</button></a> 
+        </div>
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Equipes</p>
+            <p class="text-body">gerer tout les equipes du LRDSI</p>
+          </div>
+         <a href="../gestionequipes/gestequipe.php"><button class="card-button">Gestion</button></a>         </div>
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Publications </p>
+            <p class="text-body">gerer les Publications du LRDSI</p>
+          </div>
+         <a href="../gestionpublications/gestionenv.php"><button class="card-button">Gestion</button></a>         </div>
+        <div class="card">
+          <div class="card-details">
+            <p class="text-title">Projets</p>
+            <p class="text-body">gerer tout les Projets du laboratoire</p>
+          </div>
+         <a href="../gestionprojets/gestprojet.php"><button class="card-button">Gestion</button></a>         </div>
+         <div class="card">
+          <div class="card-details">
+            <p class="text-title">Profil</p>
+            <p class="text-body">Vous pouvez gerer <br> Votre profil</p>
+          </div>
+         <a href="../profil/profil.php"><button class="card-button">Gestion</button></a>         </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <a href="LRDSIPRINCIPAL.html"><img src="../../images/footer logo.png" alt="" class="logosite" ></a>
+          <a href="https://en.univ-blida.dz/"><img src="../../images/univ logo.png" alt="" class="logouniv"   style="float: right; padding: 35px;" ></a>
+        
+          </div>
+            <div class="container2">
+             <hr id="footer-line">
+          
+          <a href="https://www.facebook.com/LRDSI/"><img src="../../images/icons8-facebook-50.png" alt="" class="social-media"></a>
+          <a href="https://www.linkedin.com/company/laboratoire-de-recherche-pour-le-d%C3%A9veloppement-des-syst%C3%A8mes-informatiques-lrdsi/"><img src="../../images/icons8-linkedin-50.png" alt="" class="social-media"></a>
+        
+          
+          <p class="footer-text">© 2020 LRDSI. All rights reserved </p>
+          <p class="footer-text">devlopped by Shark team</p>
+        </div>
+        </div>
+      
+      </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+</html>
